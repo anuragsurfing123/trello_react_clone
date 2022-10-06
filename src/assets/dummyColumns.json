@@ -1,0 +1,32 @@
+{ 
+    "col1":{
+        "name":"Todo",
+        "items":[
+            {
+                "id":"it1",
+                "content":"First Task",
+                "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+            },
+            {
+                "id":"it22",
+                "content":"Second Task",
+                "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+            }
+        ]
+
+    },
+    
+    "col2":{
+        "name":"InProgress",
+        "items":[]
+
+    },
+    "col3":{
+        "name":"Done",
+        "items":[]
+
+    }
+    
+
+}
