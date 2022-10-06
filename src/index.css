@@ -40,4 +40,56 @@ h4{
   text-align: center;
 }
 
+/* .grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+
+} */
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+  
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+  
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+  
+  }
+}
+
+
 

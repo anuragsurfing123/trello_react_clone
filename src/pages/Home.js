@@ -129,13 +129,13 @@ const Home = () => {
             
         </div>
         
-        <div className='row' style={{justifyContent:'center', height:'100%',gridGap: "2rem"}}>
+        <div className='grid-container' style={{justifyContent:'center', height:'100%',gridGap: "2rem"}}>
         
         <DragDropContext onDragEnd={result => onDragEnd(result,columns,setColumns)}>
               {
                   Object.entries(columns).map(([id, columns])=>{
                       return(
-                          <div className='col-lg-3 col-md-2 col-xs-1' style={{alignItems:'center', margin:"1rem", color:'#ebecf0'}}>
+                          <div className='grid-items' style={{alignItems:'center', margin:"1rem", color:'#ebecf0'}}>
                               {/* <h2>{columns.name}</h2> */}
                               <div style={{margin:8}}>
                                   <Droppable droppableId={id} key={id} >
@@ -147,12 +147,12 @@ const Home = () => {
                                               style={{
                                                   background: snapshot.isDraggingOver ? 'lightblue' : columns.name=='Todo' ? '#dbd4f2' : columns.name=='InProgress' ? '#efdbd5' : '#daeeda',
                                                   padding:4,
-                                                  width:400,
+                                                  width:"25rem",
                                                   minHeight:500,
                                                   borderRadius:"5px"
                                               }}
                                               >
-                                                
+
                                                   <h4>{columns.name}</h4>
                                                   {columns.items.map((item,index)=>{
                                                       return(
